@@ -61,4 +61,9 @@
   defaultBranch = master
 [user]
 	email = salim.saadi85@gmail.com
-	name = SalimSa
+	name = Salim SAADI
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
